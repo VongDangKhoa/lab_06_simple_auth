@@ -66,7 +66,7 @@ Hai file demo:
    Tương tự, gửi POST để đăng ký hoặc gửi login:
 
    ```powershell
-   curl -X POST http://localhost:3000/auth/register -H "Content-Type: application/json" -d '{"username":"alice","password":"pass123"}'
+   curl -X POST http://localhost:3001/auth/register -H "Content-Type: application/json" -d '{"username":"alice","password":"pass123"}'
    ```
 
    Ảnh minh họa request + phản hồi (POST / register / show):
@@ -80,7 +80,7 @@ Hai file demo:
    Dùng curl và lưu cookie ra file để kiểm thử các route bảo vệ sau khi login:
 
    ```powershell
-   curl -c cookies.txt -X POST http://localhost:3000/auth/login -H "Content-Type: application/json" -d '{"username":"alice","password":"pass123"}'
+   curl -c cookies.txt -X POST http://localhost:3001/auth/login -H "Content-Type: application/json" -d '{"username":"alice","password":"pass123"}'
    ```
 
 4) Bước 4 — Truy cập route bảo vệ (ví dụ `/auth/profile`)
@@ -88,7 +88,7 @@ Hai file demo:
    Gọi GET kèm cookie đã lưu:
 
    ```powershell
-   curl -b cookies.txt http://localhost:3000/auth/profile
+   curl -b cookies.txt http://localhost:3001/auth/profile
    ```
 
 5) Bước cuối — Logout
@@ -96,7 +96,7 @@ Hai file demo:
    Gọi endpoint logout để hủy session:
 
    ```powershell
-   curl -b cookies.txt http://localhost:3000/auth/logout
+   curl -b cookies.txt http://localhost:3001/auth/logout
    ```
 
 ---
