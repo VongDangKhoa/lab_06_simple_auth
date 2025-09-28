@@ -99,30 +99,3 @@ Hai file demo:
    curl -b cookies.txt http://localhost:3001/auth/logout
    ```
 
----
-
-## Lưu ý
-
-- Các demo ở đây phục vụ mục đích học tập. Chúng thiếu nhiều cơ chế bảo mật và kiểm tra đầu vào cần thiết cho môi trường production.
-- Nếu bạn muốn, tôi có thể:
-  - Thêm mô tả chi tiết từng endpoint (URL chính xác trong mỗi demo),
-  - Viết script PowerShell tự động chạy chuỗi test (register → login → profile → logout),
-  - Dịch README sang tiếng Anh hoặc chỉnh nội dung theo yêu cầu.
-
-Nếu muốn tôi thực hiện tiếp, hãy cho biết bạn muốn test `basic_auth.js` hay `cookie_auth.js` trước và tôi sẽ tạo script test tự động.
-
-                                                Test basic_auth
-chạy server                                                
-![image-1](img/image-1.png)
-test
-![image-2](img/image-2.png)
-show
-![image-3](img/image-3.png)
-
-                                                Test cookie_auth
-chạy server
-![image-4](img/image-4.png)
-test + show
-![image-5](img/image-5.png)
-![image-6](img/image-6.png)
-
